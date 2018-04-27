@@ -26,6 +26,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameNotebookApi.Business.Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameNotebookApi.Web.Tests", "GameNotebookApi.Web.Tests\GameNotebookApi.Web.Tests.csproj", "{397AED4C-C732-4B07-AAA2-5A4FB4E8DF5A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "msbuild", "msbuild", "{CF262B6F-7773-4657-9118-7F3D6FAD93B2}"
+	ProjectSection(SolutionItems) = preProject
+		after.GameNotebookApi.sln.targets = after.GameNotebookApi.sln.targets
+		Directory.Build.targets = Directory.Build.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +61,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F52C2C5E-6A16-491B-AFAC-82D9DC762B8C} = {387C5A87-820D-4A23-9A4F-077ABF519C84}
 		{397AED4C-C732-4B07-AAA2-5A4FB4E8DF5A} = {387C5A87-820D-4A23-9A4F-077ABF519C84}
+		{CF262B6F-7773-4657-9118-7F3D6FAD93B2} = {EB6ACD2E-3DC8-4F12-9B13-D7D97DCFBA73}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5130ABA-FF34-439B-A123-9D518EAD16E7}

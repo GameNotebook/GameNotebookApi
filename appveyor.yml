@@ -15,7 +15,7 @@ install:
 build_script:
 - ps: Write-Host "Building Solution ($env:CONFIGURATION)..." -ForegroundColor Cyan 
 - ps: cd $env:APPVEYOR_BUILD_FOLDER\src
-- ps: dotnet build /p:Configuration=Release
+- ps: dotnet build /p:Configuration=Release /p:DebugType=Full
 
 test_script:
 - ps: cd $env:APPVEYOR_BUILD_FOLDER
