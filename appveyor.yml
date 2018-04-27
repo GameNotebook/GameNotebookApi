@@ -1,0 +1,14 @@
+version: 0.1.0.{build}
+image: Visual Studio 2017
+configuration: Release
+clone_folder: c:\projects\gamenotebookapi
+
+install:
+- ps: Write-Host "Restoring NuGet Packages..." -ForegroundColor Cyan 
+- ps: cd $env:APPVEYOR_BUILD_FOLDER\src
+- ps: dotnet restore
+
+build_script:
+- ps: Write-Host "Building Solution ($env:CONFIGURATION)..." -ForegroundColor Cyan 
+- ps: cd $env:APPVEYOR_BUILD_FOLDER\src
+- ps: dotnet build /p:Configuration=Release
